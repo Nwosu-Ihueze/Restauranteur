@@ -81,8 +81,8 @@ font-size: 20px;
     text-align: center;
     font-family: 'Rubik', sans-serif;
 }
-.services .btn-primary{
-    align-items: center !important;
+.services .btn-outline{
+    margin-left: 45%;
 }
 .experience{
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/experience-image.png);
@@ -232,6 +232,20 @@ font-size: 20px;
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
 }
+
+   
+.flex-column {
+    max-width: 260px;
+}
+
+img {
+    margin: 5px;
+}
+
+.scale {
+    transform: scaleY(1.05);
+    padding-top: 5px; 
+}
 .gallery__img {
     width: 100%;
     height: 100%;
@@ -318,6 +332,14 @@ nav select {
              
              }
   }
+  .gallery-wrapper {
+    overflow: hidden;
+  }
+  
+  .grid-item {
+    padding-bottom: 3px;
+
+  }
   .testimonial h3{
     font-family: 'Playfair Display', serif;
     font-size: 36px;
@@ -325,3 +347,148 @@ nav select {
     padding-top: 10%;
     color: #ffca47;
   }
+  .swiper-pagination-bullet{
+    background-color: #ffca47 !important;
+    width: 20px;
+    height: 20px;
+  }
+  .swiper-button-next{
+    color: #fff !important;
+  }
+  .swiper-button-prev{
+    color: #fff !important;
+  }
+  .contact{
+    padding-bottom: 10%;
+  }
+  .contact .text-gold{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    color: #ffca47;
+  }
+  .contact p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 2%;
+  }
+  .form-group{
+    color: #fff;
+    font-size: 18px;
+  }
+  .form-control{
+    background: transparent;
+  }
+  .footer{
+    padding-bottom: 1%;
+  }
+  .copyright, a{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+  }
+  .copyright a:hover{
+    color: #ffca47;
+  }
+  .social{
+    margin-left: 17%;
+  }
+  .social-icons{
+    width: 24px ;
+    height: 24px ;
+  }
+  .social-icons a{
+    color: #ffffff;
+  }
+  .ion-margin{
+    margin-left: 16px;
+  }
+
+  @media (max-width: 1199px) {
+     .card{
+       margin-left: 20% !important;
+     }
+  }
+  @media (max-width: 991px) {
+    nav ul {
+      list-style: none;
+      margin-left: 5%;
+      color: #fff;
+    }
+    nav li {
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+
+@media (max-width: 767px) {
+  .footer-logo{
+    margin-left: 40%;
+  }
+  .social{
+    margin-left: 35%;
+  }
+}
+@media (max-width: 575px) {
+  .hero .lead, .display, .text{
+  text-align: center;
+  }
+  .hero .btn-outline{
+    margin-left: 35%;
+  }
+  .hero-image{
+    margin-left: 8%;
+  }
+  .about .image{
+    margin-left: 15%;
+  }
+  .about .heading{
+    margin-left: 35%;
+  }
+  .contact .image{
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .hero .btn-outline{
+    margin-left: 25%;
+  }
+  .about .image{
+    margin-left: 5%;
+  }
+  .about .heading{
+    margin-left: 25%;
+  }
+  .about .description{
+    text-align: center;
+  }
+  .card{
+    margin-left: 5%;
+  }
+  .services .btn-outline{
+    margin-left: 25%;
+  }
+  nav{
+    margin-left: -22%;
+  }
+  .swiper-button-next{
+    display: none !important;
+  }
+  .swiper-button-prev{
+    display: none !important;
+  }
+  .contact .btn-outline{
+    position: relative;
+    left: -15%;
+  }
+  .footer-logo{
+    margin-left: 30%;
+  }
+  .social{
+    margin-left: 20%;
+  }
+}
