@@ -283,11 +283,6 @@ nav select {
   .gallery-wrapper {
     overflow: hidden;
   }
-  
-  .grid-item {
-    padding-bottom: 3px;
-
-  }
   .testimonial h3{
     font-family: 'Playfair Display', serif;
     font-size: 36px;

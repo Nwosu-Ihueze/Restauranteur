@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
      <!--Custom CSS-->
      <link rel="stylesheet" href="./assets/css/custom.css">
+     <link rel="stylesheet" href="./assets/css/mobile.css">
       <!--Fonts-->
       <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap" rel="stylesheet">
       <!-- Link Swiper's CSS -->
@@ -99,46 +100,64 @@
 
         <div class="services">
             <h2 class="services-heading text-center">Services I Offer</h2>
-            <div class="row align-items-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Regular Personal Chef</h5>
-                      <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla  vestibulum a lorem non luctus.</p>
-                    </div>
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">Regular Personal Chef</h5>
+                              <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
+                          </div>
+                      </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Catering</h5>
-                      <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla  vestibulum a lorem non luctus.</p>
-                    </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">Catering</h5>
+                              <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
+                          </div>
+                      </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Cooking Classes</h5>
-                      <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla  vestibulum a lorem non luctus.</p>
-                    </div>
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">Cooking Classes</h5>
+                              <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">New Kitchen Setup</h5>
-                      <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla  vestibulum a lorem non luctus.</p>
-                    </div>
+              </div>
+              <div class="row my-3">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">New Kitchen Setup</h5>
+                              <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
+                          </div>
+                      </div>
+      
                   </div>
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Specialty Baking</h5>
-                      <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla  vestibulum a lorem non luctus.</p>
-                    </div>
+                  <div class="col-md-4">
+      
+                      <div class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">Specialty Baking</h5>
+                              <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
+                          </div>
+                      </div>
                   </div>
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Meal Planning</h5>
-                      <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla  vestibulum a lorem non luctus.</p>
-                    </div>
+                  <div class="col-md-4">
+      
+                      <div class="card">
+                          <div class="card-body">
+                              <h5 class="card-title">Meal Planning</h5>
+                              <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
+                          </div>
+                      </div>
                   </div>
-            </div>
+      
+              </div>
+          </div>
             <button type="button" class="btn btn-outline">WORK WITH ME</button>
         </div>
     </div>
@@ -199,18 +218,18 @@
     </div>
 </section>
 
-<section class="work">
+<section class="work"  x-data="{ tab: 'all' }">
     <div class="container">
         <h3 class="heading text-center">My Work</h3> 
-         <nav>
-        <ul>
-        <li class="active">ALL </li>
-        <li><a href="#"> DESSERT</a></li>
-        <li><a href="#"> APPETIZER</a></li>
-        <li><a href="#"> RESTAURANT</a></li>
-        <li><a href="#"> DINNER</a></li>
-            <li><a href="#"> DRINKS</a></li>
-            <li><a href="#">CONFECTIONARY</a></li>
+         <nav class="sort">
+        <ul class="sort-links">
+        <li class="link-item"><a href="#" @click.prevent="tab = 'all'" :class="{ 'active' : tab === 'all' }">ALL</a></li>
+        <li class="link-item"><a href="#" @click.prevent="tab = 'dessert'" :class="{ 'active' : tab === 'dessert' }"> DESSERT</a></li>
+        <li class="link-item"><a href="#" @click.prevent="tab = 'appetizer'" :class="{ 'active' : tab === 'appetizer' }"> APPETIZER</a></li>
+        <li class="link-item"><a href="#" @click.prevent="tab = 'restaurant'" :class="{ 'active' : tab === 'restaurant' }"> RESTAURANT</a></li>
+        <li class="link-item"><a href="#" @click.prevent="tab = 'dinner'" :class="{ 'active' : tab === 'dinner' }"> DINNER</a></li>
+            <li class="link-item"><a href="#" @click.prevent="tab = 'drinks'" :class="{ 'active' : tab === 'drinks' }"> DRINKS</a></li>
+            <li class="link-item"><a href="#" @click.prevent="tab = 'confectionary'" :class="{ 'active' : tab === 'confectionary' }">CONFECTIONARY</a></li>
         </ul>
         <select>
         <option value="" selected="selected">ALL</option>
@@ -223,49 +242,59 @@
         </select>
         </nav>
       </div>
-      <div class="container" style="margin-top:5rem">
-        <div class="row">  
-          <div class="col-lg-12">
-            <div class="gallery-wrapper clearfix">
-              <div class="col-md-3 grid-sizer"></div>
-              <div class="col-md-3 grid-item">
-                <img class="img-fluid" src="./assets/images/Rectangle-8.png">
+      <div class="gallery">
+        <div class="container" style="margin-top:5rem">
+          <div class="row">  
+            <div class="col-lg-12">
+              <div class="gallery-wrapper clearfix">
+                <div class="col-md-3 grid-sizer"></div>
+                <div class="col-md-3 grid-item">
+                  <div class="singleImg" x-show="tab === 'dessert' || tab === 'all'">
+                    <img class="img-fluid" src="./assets/images/Rectangle-8.jpg">
+                  </div>
+                </div>
+        
+                <div class="col-md-3 grid-item">
+                  <div class="singleImg" x-show="tab === 'restaurant' || tab === 'all'">
+                      <img class="img-fluid" src="./assets/images/Rectangle-9.jpg">
+                  </div>
+                </div>
+        
+                <div class="col-md-3 grid-item">
+                  <div class="singleImg" x-show="tab === 'confectionary' || tab === 'all'">
+                     <img class="img-fluid" src="./assets/images/Rectangle-10.jpg">
+                  </div>
+                </div>
+        
+                <div class="col-md-3 grid-item">
+                  <div class="singleImg" x-show="tab === 'appetizer' || tab === 'all'">
+                    <img class="img-fluid" src="./assets/images/Rectangle-12.jpg">
+                  </div>
+                </div>
+        
+                <div class="col-md-3 grid-item">
+                  <div class="singleImg" x-show="tab === 'confectionary' || tab === 'all'">
+                    <img class="img-fluid" src="./assets/images/Rectangle-13.jpg">
+                  </div>
+                </div>
+        
+                <div class="col-md-3 grid-item">
+                  <div class="singleImg" x-show="tab === 'drinks' || tab === 'all'">
+                    <img class="img-fluid" src="./assets/images/Rectangle-14.jpg">
+                  </div>
+                </div>
+        
+                <div class="col-md-6 grid-sizer"></div>
+                <div class="col-md-6 grid-item">
+                  <div class="singleImg" x-show="tab === 'dinner' || tab === 'all'">
+                    <img class="img-fluid" src="./assets/images/Rectangle-11.jpg">
+                  </div>
+                </div>
               </div>
-      
-              <div class="col-md-3 grid-item">
-                <img class="img-fluid" src="./assets/images/Rectangle-9.png">
-              </div>
-      
-              <div class="col-md-3 grid-item">
-                <img class="img-fluid" src="./assets/images/Rectangle-10.png">
-              </div>
-      
-              <div class="col-md-3 grid-item">
-                <img class="img-fluid" src="./assets/images/Rectangle-12.png">
-              </div>
-      
-              <div class="col-md-3 grid-item">
-                <img class="img-fluid" src="./assets/images/Rectangle-13.png">
-              </div>
-      
-              <div class="col-md-3 grid-item">
-                <img class="img-fluid" src="./assets/images/Rectangle-14.png">
-              </div>
-      
-              <div class="col-md-6 grid-sizer"></div>
-              <div class="col-md-6 grid-item">
-                <img class="img-fluid" src="./assets/images/Rectangle-11.png">
-              </div>
-      
-              
-      
             </div>
           </div>
-          
-          
-        </div>
+        </div>      
       </div>      
-
 </section>
 
 
@@ -426,6 +455,10 @@
 <script src="./assets/js/custom.js"></script>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Alpine -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>   
 
 <!-- Initialize Swiper -->
 <script>
