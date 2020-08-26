@@ -8,9 +8,11 @@ background: #000000;
     color: #fff;
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
+    border-bottom: 1px solid transparent;
 }
 .nav-link:hover{
     color: #ffca47;
+    border-bottom: 1px solid #ffca47;
   }
   .hero{
       padding-top: 10%;
@@ -65,7 +67,6 @@ font-size: 20px;
 }
 .card{
     background: #100f0f;
-    margin: 3%;
 }
 .card-title{
     font-size: 24px;
@@ -82,7 +83,7 @@ font-size: 20px;
     font-family: 'Rubik', sans-serif;
 }
 .services .btn-outline{
-    margin-left: 45%;
+    margin-left: 40%;
 }
 .experience{
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/experience-image.png);
@@ -227,6 +228,9 @@ font-size: 20px;
   .work a{
     color: #ffffff;
 }
+.work a:hover{
+  color: #ffca47;
+}
  
    
 .flex-column {
@@ -325,6 +329,9 @@ nav select {
   }
   .form-control{
     background: transparent;
+  }
+  hr{
+    border: 1px solid #fff;
   }
   .footer{
     padding-bottom: 1%;
