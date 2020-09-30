@@ -247,7 +247,7 @@ body {
     font-size: 21px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     ul.timeline:before {
         left: 40px;
     }
@@ -347,7 +347,7 @@ nav select {
     display: none;
 }
 
-@media (max-width: 960px) {
+@media screen and  (max-width: 960px) {
     nav ul {
         display: none;
     }
@@ -454,7 +454,7 @@ a {
     margin-left: 16px;
 }
 
-@media (max-width: 991px) {
+@media screen and  (max-width: 991px) {
     .work nav ul {
         list-style: none;
         margin-left: 5%;
@@ -466,7 +466,7 @@ a {
     }
 }
 
-@media (max-width: 767px) {
+@media screen and  (max-width: 767px) {
     .footer-logo {
         margin-left: 40%;
     }
@@ -475,7 +475,7 @@ a {
     }
 }
 
-@media (max-width: 575px) {
+@media screen and  (max-width: 575px) {
     .hero .lead,
     .display,
     .text {
@@ -498,7 +498,7 @@ a {
     }
 }
 
-@media (max-width: 320px) {
+@media screen and  (max-width: 320px) {
     .hero .btn-outline {
         margin-left: 25%;
     }
@@ -536,4 +536,13 @@ a {
     .social {
         margin-left: 20%;
     }
+}@media screen and  (max-width:900px) {
+    .custom-nav.sticky {
+        background: #000 !important;
+    }
+    nav-link:hover {
+    width: 50% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
 }
