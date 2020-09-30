@@ -1,4 +1,4 @@
-@media (min-width: 48rem) {
+@media screen and  (min-width: 48rem) {
     .column-sm-1 {
       flex-basis: 8.3333333333%;
       max-width: 8.3333333333%;
@@ -59,7 +59,7 @@
       max-width: 100%;
     }
   }
-  @media (min-width: 62rem) {
+  @media screen and  (min-width: 62rem) {
     .column-md-1 {
       flex-basis: 8.3333333333%;
       max-width: 8.3333333333%;
@@ -120,7 +120,7 @@
       max-width: 100%;
     }
   }
-  @media (min-width: 75rem) {
+  @media screen and  (min-width: 75rem) {
     .column-lg-1 {
       flex-basis: 8.3333333333%;
       max-width: 8.3333333333%;
@@ -252,7 +252,7 @@
       grid-column-end: span 12;
     }
   
-    @media (min-width: 48rem) {
+    @media screen and  (min-width: 48rem) {
       .column-sm-1 {
         grid-column-start: span 1;
         grid-column-end: span 1;
@@ -313,7 +313,7 @@
         grid-column-end: span 12;
       }
     }
-    @media (min-width: 62rem) {
+    @media screen and  (min-width: 62rem) {
       .column-md-1 {
         grid-column-start: span 1;
         grid-column-end: span 1;
@@ -374,7 +374,7 @@
         grid-column-end: span 12;
       }
     }
-    @media (min-width: 75rem) {
+    @media screen and (min-width: 75rem) {
       .column-lg-1 {
         grid-column-start: span 1;
         grid-column-end: span 1;
