@@ -15,6 +15,10 @@ body {
     color: #ffca47;
     border-bottom: 2px solid #ffca47;
 }
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+}
 
 .hero {
     padding-top: 10%;
