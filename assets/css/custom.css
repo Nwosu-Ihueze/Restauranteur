@@ -79,6 +79,9 @@ body {
     color: #ffca47;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .about .description {
@@ -372,13 +375,14 @@ nav select {
         display: none;
     }
     nav select {
-        display: inline-block;
+        display: flex;
         width: 241px;
         height: 56px;
         color: #fff;
         background: transparent;
-        margin-left: 10%;
-        margin-bottom: 8%
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8%;
     }
 }
 
@@ -399,71 +403,6 @@ nav select {
     background-size: cover;
     background-color: #333;
     color: #fff;
-}
-
-.feature {
-    background-image: url(../images/Rectangle-8.jpg);
-    background-position: bottom left;
-    color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.photos {
-    background-image: url(../images/Rectangle-13.jpg);
-    color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.news {
-    background-image: url(../images/Rectangle-12.jpg);
-    color: #fff;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.special {
-    background-image: url(../images/Rectangle-9.jpg);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.amazing {
-    background-image: url(../images/Rectangle-14.jpg);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.ops {
-    background-image: url(../images/Rectangle-10.jpg);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.cta {
-    background-image: url(../images/Rectangle-11.jpg);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 @media (min-width: 500px) {
@@ -573,16 +512,25 @@ nav select {
     background: url(../images/Rectangle-8.jpg);
     background-position: bottom left;
     color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .photos {
     background-image: url(../images/Rectangle-13.jpg);
     color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .news {
     background-image: url(../images/Rectangle-12.jpg);
     color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .special {
@@ -590,6 +538,9 @@ nav select {
     color: #fff;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .special h3,
@@ -602,6 +553,9 @@ nav select {
     color: #fff;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .ops {
@@ -609,6 +563,9 @@ nav select {
     color: #fff;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .cta {
@@ -616,19 +573,9 @@ nav select {
     color: #fff;
     display: flex;
     flex-direction: column;
-}
-
-a.spam-button:link {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    text-decoration: none;
-    background-color: #fff;
-    color: #333;
-    display: block;
-    padding: 5px;
-    margin: auto auto 20px;
-    width: 90%;
-    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (min-width: 500px) {
@@ -842,14 +789,14 @@ a {
         position: relative;
         display: flex;
     }
-    .about .image {
-        margin-left: 15%;
-    }
-    .about .heading {
-        margin-left: 35%;
-    }
     .contact .image {
         display: none;
+    }
+    .swiper-button-next {
+        display: none !important;
+    }
+    .swiper-button-prev {
+        display: none !important;
     }
     .footer-logo {
         margin-left: 30%;
@@ -860,14 +807,8 @@ a {
 }
 
 @media (max-width: 375px) {
-    .about .heading {
-        margin-left: 25%;
-    }
     .about .description {
         text-align: center;
-    }
-    .services .btn-outline {
-        margin-left: 25%;
     }
     .work nav {
         margin-left: 5%;
