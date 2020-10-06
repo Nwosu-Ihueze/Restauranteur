@@ -35,6 +35,9 @@ body {
 .hero {
     padding-top: 10%;
     padding-bottom: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .lead {
@@ -121,6 +124,9 @@ body {
 .experience {
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/experience-image.png);
     padding-bottom: 3%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .experience-heading {
@@ -322,10 +328,6 @@ body {
     max-width: 260px;
 }
 
-img {
-    margin: 5px;
-}
-
 .scale {
     transform: scaleY(1.05);
     padding-top: 5px;
@@ -401,16 +403,25 @@ nav select {
     background-image: url(../images/Rectangle-8.jpg);
     background-position: bottom left;
     color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .photos {
     background-image: url(../images/Rectangle-13.jpg);
     color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .news {
     background-image: url(../images/Rectangle-12.jpg);
     color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .special {
@@ -418,6 +429,9 @@ nav select {
     color: #fff;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .amazing {
@@ -425,6 +439,9 @@ nav select {
     color: #fff;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .ops {
@@ -432,6 +449,9 @@ nav select {
     color: #fff;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .cta {
@@ -439,6 +459,9 @@ nav select {
     color: #fff;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media (min-width: 500px) {
@@ -794,9 +817,6 @@ a {
     .contact .image img {
         margin-left: 15%;
     }
-    .work nav {
-        margin-left: 25%;
-    }
     .home-hero {
         grid-gap: 20px;
     }
@@ -815,10 +835,10 @@ a {
         text-align: center;
     }
     .hero .btn-outline {
-        margin-left: 35%;
-    }
-    .hero-image {
-        margin-left: 8%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
     }
     .about .image {
         margin-left: 15%;
@@ -829,23 +849,20 @@ a {
     .contact .image {
         display: none;
     }
+    .footer-logo {
+        margin-left: 30%;
+    }
+    .social {
+        margin-left: 20%;
+    }
 }
 
 @media (max-width: 375px) {
-    .hero .btn-outline {
-        margin-left: 25%;
-    }
-    .about .image {
-        margin-left: 5%;
-    }
     .about .heading {
         margin-left: 25%;
     }
     .about .description {
         text-align: center;
-    }
-    .card {
-        margin-left: 5%;
     }
     .services .btn-outline {
         margin-left: 25%;
