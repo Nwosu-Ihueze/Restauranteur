@@ -345,7 +345,6 @@ nav {
 
 nav ul {
     list-style: none;
-    margin-left: 20%;
     color: #fff;
 }
 
@@ -809,9 +808,6 @@ a {
 @media (max-width: 375px) {
     .about .description {
         text-align: center;
-    }
-    .work nav {
-        margin-left: 5%;
     }
     .home-hero {
         grid-gap: 20px;
