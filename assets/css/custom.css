@@ -16,6 +16,17 @@ body {
     border-bottom: 2px solid #ffca47;
 }
 
+@media screen and (max-width:900px) {
+    .custom-nav.sticky {
+        background: #000 !important;
+    }
+    .nav-link:hover {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .hero {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -366,6 +377,171 @@ nav select {
     overflow: hidden;
 }
 
+.wrapper {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.home-hero {
+    display: grid;
+    grid-gap: 1px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.home-hero>* {
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    color: #fff;
+}
+
+.feature {
+    background: url(../images/Rectangle-8.jpg);
+    background-position: bottom left;
+    color: #fff;
+}
+
+.photos {
+    background-image: url(../images/Rectangle-13.jpg);
+    color: #fff;
+}
+
+.news {
+    background-image: url(../images/Rectangle-12.jpg);
+    color: #fff;
+}
+
+.special {
+    background-image: url(../images/Rectangle-9.jpg);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.special h3,
+.amazing h3 {
+    margin-top: auto;
+}
+
+.amazing {
+    background-image: url(../images/Rectangle-14.jpg);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.ops {
+    background-image: url(../images/Rectangle-10.jpg);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta {
+    background-image: url(../images/Rectangle-11.jpg);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+a.spam-button:link {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 5px;
+    margin: auto auto 20px;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .home-hero {
+        grid-template-columns: 1fr 1fr;
+    }
+    .feature {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+    .special {
+        grid-column: 1;
+        grid-row: 3 / 6;
+    }
+    .amazing {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    .cta {
+        grid-column: 2;
+        grid-row: 5 / 7;
+    }
+    .photos {
+        grid-column: 1;
+        grid-row: 7 / 9;
+    }
+    .ops {
+        grid-column: 2;
+        grid-row: 7 / 9;
+    }
+    .news {
+        grid-column: 2;
+        grid-row: 3 / 5;
+    }
+}
+
+@media (min-width: 800px) {
+    .home-hero {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 5vw);
+        grid-gap: 10px;
+    }
+    .feature {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 9;
+    }
+    .amazing {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 9;
+    }
+    .special {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .ops {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 6;
+    }
+    .cta {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
+    .photos {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 6;
+    }
+    .news {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
 .testimonial h3 {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
@@ -466,12 +642,21 @@ a {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    .contact .image img {
+        margin-left: 15%;
+    }
+    .work nav {
+        margin-left: 25%;
+    }
+    .home-hero {
+        grid-gap: 20px;
+    }
     .footer-logo {
-        margin-left: 40%;
+        margin-left: 30%;
     }
     .social {
-        margin-left: 35%;
+        margin-left: 5%;
     }
 }
 
@@ -498,7 +683,7 @@ a {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     .hero .btn-outline {
         margin-left: 25%;
     }
@@ -518,7 +703,10 @@ a {
         margin-left: 25%;
     }
     .work nav {
-        margin-left: -22%;
+        margin-left: 5%;
+    }
+    .home-hero {
+        grid-gap: 20px;
     }
     .swiper-button-next {
         display: none !important;
