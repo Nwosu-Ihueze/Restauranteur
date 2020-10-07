@@ -749,6 +749,7 @@ a {
 
 .ion-margin {
     margin-left: 16px;
+    margin-right: 16px;
 }
 
 @media screen and (max-width: 991px) {
