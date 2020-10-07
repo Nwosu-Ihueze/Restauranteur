@@ -733,7 +733,9 @@ a {
 }
 
 .social {
-    margin-left: 17%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
 .social-icons {
@@ -768,12 +770,6 @@ a {
     .home-hero {
         grid-gap: 20px;
     }
-    .footer-logo {
-        margin-left: 30%;
-    }
-    .social {
-        margin-left: 5%;
-    }
 }
 
 @media screen and (max-width: 575px) {
@@ -797,12 +793,6 @@ a {
     .swiper-button-prev {
         display: none !important;
     }
-    .footer-logo {
-        margin-left: 30%;
-    }
-    .social {
-        margin-left: 20%;
-    }
 }
 
 @media (max-width: 375px) {
@@ -821,12 +811,6 @@ a {
     .contact .btn-outline {
         position: relative;
         left: -15%;
-    }
-    .footer-logo {
-        margin-left: 30%;
-    }
-    .social {
-        margin-left: 20%;
     }
 }
 
