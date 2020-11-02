@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +40,7 @@
                             <a class="nav-link" href="#about">About Me</a>
                         </li>
                         <li class="nav-item mx-sm-2">
-                            <a class="nav-link" href="#services">Experience</a>
+                            <a class="nav-link" href="#experience">Experience</a>
                         </li>
                         <li class="nav-item mx-sm-2">
                             <a class="nav-link" href="#work">My work</a>
@@ -52,7 +54,7 @@
         </nav>
 
         <!-- Full Page Intro -->
-        <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./assets/images/hero-image.png)">
+        <div class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./assets/images/hero-image.png)" id="home">
             <!-- Content -->
             <div class="container">
                 <!--Grid row-->
@@ -81,17 +83,17 @@
         <!-- Full Page Intro -->
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <div class="image">
+                    <div class="image" data-aos="flip-up" data-aos-delay="50" data-aos-duration="1500">
                         <img src="./assets/images/smiley-chef.png" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h2 class="heading">About Me</h2>
-                    <p class="description">An award-winning chef with over 12 years experience Morbi porta<br> turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.<br> Aliquam ut neque est. Sed tortor neque, rutrum dapibusviverra sit <br> amet, tristique sed
+                    <h2 class="heading" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">About Me</h2>
+                    <p class="description" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">An award-winning chef with over 12 years experience Morbi porta<br> turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.<br> Aliquam ut neque est. Sed tortor neque, rutrum dapibusviverra sit <br> amet, tristique sed
                         justo. Nulla maximus venenatis ligula quis cursus.<br> Nullam laoreet luctus urna at mattis. </p>
                 </div>
             </div>
@@ -101,7 +103,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 mb-3 mt-3">
-                            <div class="card my-2 h-100">
+                            <div class="card my-2 h-100" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500">
                                 <div class="card-body">
                                     <h5 class="card-title">Regular Personal Chef</h5>
                                     <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
@@ -109,7 +111,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 mb-3 mt-3">
-                            <div class="card my-2 h-100">
+                            <div class="card my-2 h-100" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1500">
                                 <div class="card-body">
                                     <h5 class="card-title">Catering</h5>
                                     <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
@@ -117,7 +119,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 mb-3 mt-3">
-                            <div class="card my-2 h-100">
+                            <div class="card my-2 h-100" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
                                 <div class="card-body">
                                     <h5 class="card-title">Cooking Classes</h5>
                                     <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
@@ -127,7 +129,7 @@
                     </div>
                     <div class="row my-3">
                         <div class="col-md-4 mb-3 mt-3">
-                            <div class="card my-2 h-100">
+                            <div class="card my-2 h-100" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500">
                                 <div class="card-body">
                                     <h5 class="card-title">New Kitchen Setup</h5>
                                     <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
@@ -137,7 +139,7 @@
                         </div>
                         <div class="col-md-4 mb-3 mt-3">
 
-                            <div class="card my-2 h-100">
+                            <div class="card my-2 h-100" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
                                 <div class="card-body">
                                     <h5 class="card-title">Specialty Baking</h5>
                                     <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
@@ -146,7 +148,7 @@
                         </div>
                         <div class="col-md-4 mb-3 mt-3">
 
-                            <div class="card my-2 h-100">
+                            <div class="card my-2 h-100" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
                                 <div class="card-body">
                                     <h5 class="card-title">Meal Planning</h5>
                                     <p class="card-text">Morbi porta turpis ac risus tempor mattis. Nulla vestibulum a lorem non luctus.</p>
@@ -164,13 +166,13 @@
 
 
 
-    <section class="experience">
+    <section class="experience" id="experience">
         <div class="container">
             <ul class="timeline">
                 <li class="timeline-inverted">
                     <div class="timeline-icon"><img src="./assets/images/Milestone2.svg" alt=""></i>
                     </div>
-                    <div class="timeline-panel animated slideInRight">
+                    <div class="timeline-panel animated slideInRight" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">JT Spice, CEO</h4>
                             <small>2016 - Present</small>
@@ -183,7 +185,7 @@
                 </li>
                 <li>
                     <div class="timeline-icon"><img src="./assets/images/Milestone2.svg" alt=""></div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">Kentucky Fried Chicken, Chief Cook</h4>
                             <small>2012 - 2016</small>
@@ -197,7 +199,7 @@
                 <li class="timeline-inverted">
                     <div class="timeline-icon"><img src="./assets/images/Milestone2.svg" alt=""></i>
                     </div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1500">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">Chillspot, Assistant Chef</h4>
                             <small>2005 - 2012</small>
@@ -211,7 +213,7 @@
                 <li>
                     <div class="timeline-icon"><img src="./assets/images/Milestone2.svg" alt=""></i>
                     </div>
-                    <div class="timeline-panel">
+                    <div class="timeline-panel" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1500">
                         <div class="timeline-heading">
                             <h4 class="timeline-title">Dallas Delight, Chief Cook</h4>
                             <small>2000 - 2005</small>
@@ -228,7 +230,7 @@
     </section>
 
 
-    <section class="work" x-data="{ tab: 'all' }">
+    <section class="work" x-data="{ tab: 'all' }" id="work">
         <div class="container">
             <h3 class="heading text-center">My Work</h3>
             <nav class="sort text-center">
@@ -256,19 +258,19 @@
             <div class="container">
                 <div class="wrapper">
                     <div class="home-hero">
-                        <div class="feature" x-show="tab === 'dessert' || tab === 'all'">
+                        <div class="feature" x-show="tab === 'dessert' || tab === 'all'" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
                         </div>
-                        <div class="special" x-show="tab === 'restaurant' || tab === 'all'">
+                        <div class="special" x-show="tab === 'restaurant' || tab === 'all'" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
                         </div>
-                        <div class="amazing" x-show="tab === 'drinks' || tab === 'all'">
+                        <div class="amazing" x-show="tab === 'drinks' || tab === 'all'" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
                         </div>
-                        <div class="news" x-show="tab === 'appetizer' || tab === 'all'">
+                        <div class="news" x-show="tab === 'appetizer' || tab === 'all'" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
                         </div>
-                        <div class="ops" x-show="tab === 'confectionary' || tab === 'all'">
+                        <div class="ops" x-show="tab === 'confectionary' || tab === 'all'" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
                         </div>
-                        <div class="photos" x-show="tab === 'confectionary' || tab === 'all'">
+                        <div class="photos" x-show="tab === 'confectionary' || tab === 'all'" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
                         </div>
-                        <div class="cta" x-show="tab === 'dinner' || tab === 'all'">
+                        <div class="cta" x-show="tab === 'dinner' || tab === 'all'" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1500">
                         </div>
                     </div>
                 </div>
@@ -348,7 +350,7 @@
 
 
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
@@ -485,6 +487,15 @@
                 el: '.swiper-pagination',
                 dynamicBullets: true,
             },
+        });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).on("scroll", function() {
+                AOS.init();
+            });
         });
     </script>
 </body>
